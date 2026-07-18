@@ -1,6 +1,7 @@
 # Python artifacts
 __pycache__/
-*.py[oc]
+*.py[co]
+*.pyc
 *.egg-info/
 .venv/
 
@@ -11,6 +12,21 @@ __pycache__/
 # Tools (redaction scripts stay local)
 tools/
 
+# Environment files
+.env
+.env.*
+
+# Evidence (generated at runtime)
+evidence/
+evidence/**
+
+# Output (Hermes artifacts)
+output/
+output/**
+
 # Duplicate evidence under home_root (keep main copies in evidence/)
 evidence/home_root/
 .linkedin_draft.md
+
+# Root directory (Docker mount artifact)
+rootdir/
