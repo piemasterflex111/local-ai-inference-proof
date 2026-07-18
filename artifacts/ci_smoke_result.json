@@ -1,0 +1,23 @@
+{
+  "run_type": "ci-smoke-benchmark",
+  "timestamp_utc": "2026-06-30T20:27:25Z",
+  "status": "pass",
+  "python_version": "3.11.15",
+  "platform": "Linux x86_64",
+  "repo_purpose": "Local AI inference validation infrastructure \u2014 test infrastructure, CI/CD pipelines, benchmark evidence, and regression detection for Qwen3.6-27B NVFP4 served through vLLM on RTX PRO 4000 Blackwell.",
+  "checks": {
+    "required_directories": {
+      "src": true,
+      "tests": true,
+      "scripts": true,
+      "docs": true,
+      "evidence": true
+    },
+    "required_files": {
+      "README.md": true,
+      "pyproject.toml": true,
+      "requirements.txt": true
+    }
+  },
+  "note": "This is a cloud CI smoke benchmark. Real GPU benchmarks run on the self-hosted RTX PRO 4000 Blackwell workstation via the gpu-benchmark-self-hosted.yml workflow."
+}

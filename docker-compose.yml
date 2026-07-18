@@ -1,0 +1,6 @@
+services:
+  local-ai-stack-proof:
+    build: .
+    image: local-ai-stack-proof:latest
+    ports:
+      - "8060:8060"

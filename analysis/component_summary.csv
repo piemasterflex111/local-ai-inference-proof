@@ -1,0 +1,6 @@
+component,files,evidence_count,status,key_file
+vLLM Server,"startup_logs, config_backups, benchmarks",82,VERIFIED - Config #6 stable,start-qwen36-stable-65k-no-mtp.sh
+Request Governor,"home_root/governor, governor_logs, pass_baselines",3,VERIFIED - PASS at 20260619_203505,qwen_request_governor_PASS_20260619_203505.jsonl
+AI Workflow Scripts,home_root/bin_ai,23,OPERATIONAL,"start-qwen, qwen-health, qwen-bench4"
+Archive Evidence,archives,7,IMPORTED,vllm_troubleshooting_runbook.txt
+baseline,vLLM running Docker inspect,1,Verified Qwen3.6-27B NVFP4 MTP vLLM container running with FP8 KV cache, 65K context, prefix caching, modelopt quantization, GPU access, and host port 8001 exposed.

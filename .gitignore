@@ -1,0 +1,16 @@
+# Python artifacts
+__pycache__/
+*.py[oc]
+*.egg-info/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Tools (redaction scripts stay local)
+tools/
+
+# Duplicate evidence under home_root (keep main copies in evidence/)
+evidence/home_root/
+.linkedin_draft.md

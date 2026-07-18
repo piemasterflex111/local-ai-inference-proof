@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: local-ai-stack-proof
+  labels:
+    app: local-ai-stack-proof
+spec:
+  to:
+    kind: Service
+    name: local-ai-stack-proof
+  port:
+    targetPort: http

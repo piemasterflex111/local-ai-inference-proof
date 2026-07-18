@@ -1,0 +1,165 @@
+file_path,category,type,purpose,evidence_strength,size_bytes,has_secrets,linked_from
+Dockerfile,build,docker,Container build configuration,direct,400,no,no
+EVIDENCE_INDEX.md,index,markdown,Evidence index and reference,direct,3060,no,no
+Makefile,build,makefile,Build automation,direct,1204,no,no
+README.md,documentation,markdown,Project overview and technical narrative,direct,2622,no,no
+analysis/component_summary.csv,analysis,csv,Quantitative engineering analysis linking claims to raw evidence,direct,691,no,yes
+analysis/event_timeline.csv,analysis,csv,Quantitative engineering analysis linking claims to raw evidence,direct,12917,no,yes
+analysis/evidence_index.csv,analysis,csv,Quantitative engineering analysis linking claims to raw evidence,direct,86,no,yes
+analysis/final_analysis_report.md,analysis,markdown,Quantitative engineering analysis linking claims to raw evidence,direct,11601,no,yes
+deploy/openshift/README.md,deployment,yaml,Production deployment configuration (OpenShift),direct,184,no,no
+deploy/openshift/deployment.yaml,deployment,yaml,Production deployment configuration (OpenShift),direct,802,no,no
+deploy/openshift/kustomization.yaml,deployment,yaml,Production deployment configuration (OpenShift),direct,127,no,no
+deploy/openshift/route.yaml,deployment,yaml,Production deployment configuration (OpenShift),direct,215,no,no
+deploy/openshift/service.yaml,deployment,yaml,Production deployment configuration (OpenShift),direct,222,no,no
+docker-compose.yml,build,yaml,Docker compose configuration,direct,117,no,no
+docs/API.md,documentation,markdown,Project engineering documentation,direct,520,no,yes
+docs/ARCHITECTURE.md,documentation,markdown,Project engineering documentation,direct,335,no,yes
+docs/AUDIT_LEDGER.md,documentation,markdown,Project engineering documentation,direct,9578,no,yes
+docs/DOCKER.md,documentation,markdown,Project engineering documentation,direct,218,no,yes
+docs/OPENSHIFT.md,documentation,markdown,Project engineering documentation,direct,149,no,yes
+docs/failure-taxonomy.md,documentation,markdown,Project engineering documentation,direct,5130,no,yes
+docs/governor-evolution.md,documentation,markdown,Project engineering documentation,direct,3046,no,yes
+docs/verified-baselines.md,documentation,markdown,Project engineering documentation,direct,4173,no,yes
+evidence/CONFIG_ATTEMPTS_SUMMARY.md,evidence,markdown,Evidence documentation,direct,5048,no,yes
+evidence/agent55_baselines/CONTEXT_BUDGET_GUARD_PASS.md,evidence,markdown,Evidence documentation,direct,858,no,yes
+evidence/agent55_baselines/qwen_request_governor_PASS_20260619_203505.jsonl,evidence,other,Evidence artifact,direct,596498,no,yes
+evidence/benchmarks/01_llmfit_system.txt,evidence,benchmark,Performance benchmark results,direct,198,no,yes
+evidence/benchmarks/02_gpu_state.txt,evidence,benchmark,Performance benchmark results,direct,231,no,yes
+evidence/benchmarks/03_vllm_models.txt,evidence,benchmark,Performance benchmark results,direct,0,no,yes
+evidence/benchmarks/04_vllm_bench.txt,evidence,benchmark,Performance benchmark results,direct,10711415,no,yes
+evidence/benchmarks/context_stress_bench.txt,evidence,benchmark,Performance benchmark results,direct,1930,no,yes
+evidence/benchmarks/context_stress_template_no_think.txt,evidence,benchmark,Performance benchmark results,direct,1172,no,yes
+evidence/benchmarks/direct_vllm_bench.txt,evidence,benchmark,Performance benchmark results,direct,1389,no,yes
+evidence/benchmarks/direct_vllm_no_think_bench.txt,evidence,benchmark,Performance benchmark results,direct,1220,no,yes
+evidence/benchmarks/direct_vllm_template_no_think.txt,evidence,benchmark,Performance benchmark results,direct,1057,no,yes
+evidence/benchmarks/gpu_after_direct_bench.txt,evidence,benchmark,Performance benchmark results,direct,207,no,yes
+evidence/benchmarks/rtx_daily_bench_20260617_014216.csv,evidence,benchmark,Performance benchmark results,direct,207,no,yes
+evidence/benchmarks/rtx_daily_bench_20260617_014216.md,evidence,benchmark,Performance benchmark results,direct,725,no,yes
+evidence/benchmarks/rtx_daily_bench_20260617_014309.csv,evidence,benchmark,Performance benchmark results,direct,259,no,yes
+evidence/benchmarks/rtx_daily_bench_20260617_014309.md,evidence,benchmark,Performance benchmark results,direct,724,no,yes
+evidence/benchmarks/rtx_daily_bench_20260617_015041.csv,evidence,benchmark,Performance benchmark results,direct,258,no,yes
+evidence/benchmarks/rtx_daily_bench_20260617_015041.md,evidence,benchmark,Performance benchmark results,direct,723,no,yes
+evidence/benchmarks/rtx_daily_bench_20260617_015614.csv,evidence,benchmark,Performance benchmark results,direct,258,no,yes
+evidence/benchmarks/rtx_daily_bench_20260617_015614.md,evidence,benchmark,Performance benchmark results,direct,723,no,yes
+evidence/bin_ai/qwen-bench1,evidence,other,Evidence artifact,direct,440,no,yes
+evidence/bin_ai/qwen-bench4,evidence,other,Evidence artifact,direct,868,no,yes
+evidence/bin_ai/qwen-bench4-clean,evidence,other,Evidence artifact,direct,973,no,yes
+evidence/bin_ai/qwen-check,evidence,other,Evidence artifact,direct,982,no,yes
+evidence/bin_ai/qwen-health,evidence,other,Evidence artifact,direct,813,no,yes
+evidence/bin_ai/qwen-logs,evidence,other,Evidence artifact,direct,47,no,yes
+evidence/bin_ai/qwen-perf,evidence,other,Evidence artifact,direct,622,no,yes
+evidence/bin_ai/qwen-start,evidence,other,Evidence artifact,direct,54,no,yes
+evidence/bin_ai/qwen-thermal,evidence,other,Evidence artifact,direct,330,no,yes
+evidence/bin_ai/qwen-vl-health,evidence,other,Evidence artifact,direct,58,no,yes
+evidence/bin_ai/start-qwen,evidence,other,Evidence artifact,direct,46,no,yes
+evidence/bin_ai/start-qwen-core,evidence,other,Evidence artifact,direct,4184,no,yes
+evidence/bin_ai/start-qwen-vl,evidence,other,Evidence artifact,direct,57,no,yes
+evidence/bin_ai/start-qwen3-vl,evidence,other,Evidence artifact,direct,2322,no,yes
+evidence/bin_ai/stop-qwen,evidence,other,Evidence artifact,direct,379,no,yes
+evidence/bin_ai/stop-qwen-vl,evidence,other,Evidence artifact,direct,56,no,yes
+evidence/bin_ai/stop-qwen3-vl,evidence,other,Evidence artifact,direct,140,no,yes
+evidence/bin_archive/start-qwen.bak.20260612_190104,evidence,other,Evidence artifact,direct,1244,no,yes
+evidence/bin_archive/start-qwen.bak.20260613_145307,evidence,other,Evidence artifact,direct,1158,no,yes
+evidence/config_backups/config.yaml.before_enterprise_router_20260613_152757,evidence,config,Configuration backup chain,direct,15888,no,yes
+evidence/config_backups/config.yaml.before_text_switch_20260613_152955,evidence,config,Configuration backup chain,direct,15888,no,yes
+evidence/config_backups/config.yaml.before_text_switch_20260613_154040,evidence,config,Configuration backup chain,direct,15888,no,yes
+evidence/config_backups/config.yaml.before_text_switch_20260613_154446,evidence,config,Configuration backup chain,direct,15888,no,yes
+evidence/config_backups/config.yaml.before_text_switch_20260613_164800,evidence,config,Configuration backup chain,direct,16281,no,yes
+evidence/config_backups/config.yaml.before_text_switch_20260613_170702,evidence,config,Configuration backup chain,direct,16281,no,yes
+evidence/config_backups/config.yaml.before_text_switch_20260613_175845,evidence,config,Configuration backup chain,direct,16281,no,yes
+evidence/config_backups/config.yaml.before_text_switch_20260613_180500,evidence,config,Configuration backup chain,direct,16281,no,yes
+evidence/config_backups/config.yaml.before_text_switch_20260613_181056,evidence,config,Configuration backup chain,direct,16281,no,yes
+evidence/config_backups/config.yaml.before_text_switch_20260613_182724,evidence,config,Configuration backup chain,direct,16281,no,yes
+evidence/config_backups/config.yaml.before_text_switch_20260613_183338,evidence,config,Configuration backup chain,direct,16281,no,yes
+evidence/config_backups/hauto.bak.20260613_152757,evidence,config,Configuration backup chain,direct,5656,no,yes
+evidence/config_backups/hermes-mode.bak.20260613_152757,evidence,config,Configuration backup chain,direct,3590,no,yes
+evidence/config_backups/hvision-ac.bak.20260613_172706,evidence,config,Configuration backup chain,direct,3446,no,yes
+evidence/config_backups/qwen-health.bak.20260613_152757,evidence,config,Configuration backup chain,direct,635,no,yes
+evidence/config_backups/qwen-vl-health.bak.20260613_152757,evidence,config,Configuration backup chain,direct,659,no,yes
+evidence/config_backups/qwen-vl-health.bak.20260613_172706,evidence,config,Configuration backup chain,direct,45,no,yes
+evidence/config_backups/qwen36-current-cmd-20260614_093751.json,evidence,config,Configuration backup chain,direct,534,no,yes
+evidence/config_backups/qwen36-current-full-inspect-20260614_093751.json,evidence,config,Configuration backup chain,direct,12594,no,yes
+evidence/config_backups/qwen36_text_config_20260613_150028.txt,evidence,config,Configuration backup chain,direct,475,no,yes
+evidence/config_backups/start-qwen-vl.bak.20260613_152757,evidence,config,Configuration backup chain,direct,1036,no,yes
+evidence/config_backups/start-qwen-vl.bak.20260613_172706,evidence,config,Configuration backup chain,direct,51,no,yes
+evidence/config_backups/start-qwen.bak.20260613_152757,evidence,config,Configuration backup chain,direct,1382,no,yes
+evidence/config_backups/stop-qwen-vl.bak.20260613_152757,evidence,config,Configuration backup chain,direct,180,no,yes
+evidence/config_backups/stop-qwen-vl.bak.20260613_172706,evidence,config,Configuration backup chain,direct,50,no,yes
+evidence/config_backups/stop-qwen.bak.20260613_152757,evidence,config,Configuration backup chain,direct,242,no,yes
+evidence/governance/governor.py,evidence,other,Evidence artifact,direct,36822,no,yes
+evidence/governance/governor.py.bak.20260619_002003,evidence,other,Evidence artifact,direct,20875,no,yes
+evidence/governance/governor.py.bak.forward_patch.20260619_002612,evidence,other,Evidence artifact,direct,23495,no,yes
+evidence/governance_logs/qwen_request_governor.service.err.log,evidence,log,Raw runtime telemetry evidence,direct,18661,no,yes
+evidence/governance_logs/qwen_request_governor.service.log,evidence,log,Raw runtime telemetry evidence,direct,24517,no,yes
+evidence/governance_logs/qwen_request_governor_sample.jsonl,evidence,other,Evidence artifact,direct,799234,no,yes
+evidence/pc_spec_audit_2026-06-14.md,evidence,markdown,Evidence documentation,direct,499,no,yes
+evidence/qwen_profiles/start-qwen.WORKING.20260615_211221.bak,evidence,other,Evidence artifact,direct,46,no,yes
+evidence/start-qwen36-65k-mtp1-cpuoffload.sh,evidence,script,Evidence collection script,direct,2019,no,yes
+evidence/start-qwen36-65k-mtp1-cpuoffload10-stable.sh,evidence,script,Evidence collection script,direct,1958,no,yes
+evidence/start-qwen36-65k-mtp1-cpuoffload8-fast.sh,evidence,script,Evidence collection script,direct,2322,no,yes
+evidence/start-qwen36-65k-mtp1-cpuoffload8.sh,evidence,script,Evidence collection script,direct,1944,no,yes
+evidence/start-qwen36-65k-mtp1-squeeze.sh,evidence,script,Evidence collection script,direct,2101,no,yes
+evidence/start-qwen36-65k-mtp1-ultra.sh,evidence,script,Evidence collection script,direct,1813,no,yes
+evidence/start-qwen36-65k-mtp1.sh,evidence,script,Evidence collection script,direct,1798,no,yes
+evidence/start-qwen36-daily-65k-gpu-fast.sh,evidence,script,Evidence collection script,direct,1550,no,yes
+evidence/start-qwen36-hermes-65k-stable.sh,evidence,script,Evidence collection script,direct,1887,no,yes
+evidence/start-qwen36-stable-65k-no-mtp.sh,evidence,script,Evidence collection script,direct,1579,no,yes
+evidence/startup_logs/qwen36_canonical_2026-06-12_19-01-23.log,evidence,log,Raw runtime telemetry evidence,direct,250632,no,yes
+evidence/startup_logs/qwen36_canonical_2026-06-12_20-52-44.log,evidence,log,Raw runtime telemetry evidence,direct,253,no,yes
+evidence/startup_logs/qwen36_canonical_2026-06-12_20-53-47.log,evidence,log,Raw runtime telemetry evidence,direct,191389,no,yes
+evidence/startup_logs/start_qwen_20260613_170438.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_171258.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_171928.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_173326.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_175130.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_175653.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_180649.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_182534.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_183650.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_184016.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_184700.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_185323.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_190236.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_20260613_190715.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_65k_mtp1_20260614_094007.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_65k_mtp1_cpuoffload10_stable_20260614_100713.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_65k_mtp1_cpuoffload8_20260614_100200.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_65k_mtp1_cpuoffload8_fast_20260614_101538.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_65k_mtp1_cpuoffload8_fast_20260614_130134.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_65k_mtp1_squeeze_20260614_094309.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_65k_mtp1_ultra_20260614_094525.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_daily_65k_gpu_fast_20260614_120419.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_daily_65k_gpu_fast_20260614_121808.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_daily_65k_gpu_fast_20260614_122015.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_daily_65k_gpu_fast_20260614_122826.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_hermes_65k_stable_20260614_094816.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_hermes_65k_stable_20260614_095252.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_hermes_65k_stable_20260614_095444.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_hermes_65k_stable_20260614_095747.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/start_qwen_hermes_65k_stable_20260614_115336.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/text_container_id_20260613_152814.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/text_container_id_20260613_153900.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/text_container_id_20260613_163100.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/text_container_id_20260613_163349.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/text_container_id_20260613_163359.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/text_container_id_20260613_163538.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/text_container_id_20260613_164614.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/text_container_id_20260613_175157.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/text_container_id_20260613_175705.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/vision_container_id_20260613_153012.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/vision_container_id_20260613_162613.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/vision_container_id_20260613_163538.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/vision_container_id_20260613_163550.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+evidence/startup_logs/vision_container_id_20260613_171518.log,evidence,log,Raw runtime telemetry evidence,direct,16,no,yes
+output/local_ai_stack_verify_20260626T190106Z.md,other,unknown,Repository artifact,indirect,11313,no,no
+pyproject.toml,build,toml,Python project configuration,direct,455,no,no
+sample_data/vllm_errors.log,sample,log,Sample data for classifier testing,direct,299,no,no
+scripts/capture_pc_spec_audit.sh,scripts,markdown,Automation and verification scripts,direct,1017,no,no
+scripts/verify_local_ai_stack.sh,scripts,markdown,Automation and verification scripts,direct,1619,no,no
+src/local_ai_stack_proof/__init__.py,source,python,Python application code,direct,22,no,no
+src/local_ai_stack_proof/api.py,source,python,Python application code,direct,2897,no,no
+src/local_ai_stack_proof/cli.py,source,python,Python application code,direct,841,no,no
+src/local_ai_stack_proof/issue_classifier.py,source,python,Python application code,direct,3744,no,no
+tests/test_api.py,tests,python,Test suite,direct,2158,no,no
+tests/test_issue_classifier.py,tests,python,Test suite,direct,1257,no,no

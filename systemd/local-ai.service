@@ -1,0 +1,29 @@
+[Unit]
+Description=Local AI Inference Platform (vLLM + Qwen)
+Documentation=https://github.com/piemasterflex111/cislunar-ground-platform
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/local-ai/env.conf
+ExecStart=/usr/bin/docker compose -f /opt/local-ai/docker-compose.yml up
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+StandardOutput=journal
+StandardError=journal
+# GPU and network access
+DeviceAllow=true
+# Resource limits
+MemoryMax=48G
+CPUQuota=800%
+
+# Security hardening
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/opt/local-ai
+
+[Install]
+WantedBy=multi-user.target

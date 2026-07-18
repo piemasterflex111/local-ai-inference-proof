@@ -1,0 +1,85 @@
+name: GPU Benchmark (Self-Hosted RTX Workstation)
+
+on:
+  workflow_dispatch:
+    inputs:
+      endpoint_url:
+        description: "Local OpenAI-compatible endpoint URL"
+        required: false
+        default: "http://127.0.0.1:8001/v1"
+      benchmark_script:
+        description: "Path to benchmark script to run (optional)"
+        required: false
+        default: ""
+
+jobs:
+  gpu-benchmark:
+    name: GPU Benchmark - Self-Hosted Runner
+    runs-on: [self-hosted, linux, GPU]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify NVIDIA GPU is available
+        run: |
+          echo "=== nvidia-smi ==="
+          nvidia-smi || {
+            echo "ERROR: nvidia-smi failed. Is the NVIDIA driver installed?"
+            echo "This workflow requires a self-hosted runner with GPU hardware."
+            exit 1
+          }
+
+      - name: Verify Docker is available
+        run: |
+          echo "=== Docker status ==="
+          docker info || {
+            echo "ERROR: Docker daemon not reachable."
+            echo "Install Docker and ensure the runner user is in the 'docker' group."
+            exit 1
+          }
+
+      - name: Check endpoint health
+        env:
+          ENDPOINT_URL: ${{ github.event.inputs.endpoint_url }}
+        run: |
+          echo "=== Endpoint health check ==="
+          if curl -sf --max-time 10 "$ENDPOINT_URL/models" > /dev/null 2>&1; then
+            echo "PASS: Endpoint $ENDPOINT_URL is responding."
+          else
+            echo "FAIL: Endpoint $ENDPOINT_URL is not reachable."
+            echo "Make sure vLLM or your inference server is running on the workstation."
+            echo "This is expected if the model is not currently loaded."
+            echo "Continuing anyway — benchmark script may still provide useful data."
+          fi
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m pip install -e '.[dev]'
+
+      - name: Run GPU benchmark (if script provided)
+        if: github.event.inputs.benchmark_script != ''
+        env:
+          SCRIPT: ${{ github.event.inputs.benchmark_script }}
+        run: |
+          echo "Running benchmark: $SCRIPT"
+          python "$SCRIPT" || {
+            echo "WARNING: Benchmark script returned non-zero."
+            echo "This may be expected if the model is not loaded."
+          }
+
+      - name: Run default smoke benchmark as fallback
+        if: github.event.inputs.benchmark_script == ''
+        run: |
+          mkdir -p artifacts
+          python scripts/ci_smoke_benchmark.py --output-dir artifacts --mode gpu-self-hosted
+
+      - name: Upload GPU benchmark artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gpu-benchmark-artifact
+          path: artifacts/
+          retention-days: 30

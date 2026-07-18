@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-07-18T03:44:28Z",
+  "level1_process": "FAIL: No process or port detected",
+  "level2_api": "FAIL: ConnectError: All connection attempts failed",
+  "level3_inference": "PASS: Generated 0 tokens",
+  "api_latency_ms": null,
+  "inference_latency_ms": 441.7581719753798,
+  "tokens_per_second": 0.0,
+  "gpu_memory_mi_b": 22738,
+  "cpu_percent": null,
+  "overall": "UNHEALTHY"
+}

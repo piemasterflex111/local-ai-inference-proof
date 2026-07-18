@@ -1,0 +1,7 @@
+# Core runtime
+fastapi
+uvicorn
+
+# Test infrastructure
+pytest
+httpx

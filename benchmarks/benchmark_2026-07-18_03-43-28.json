@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-07-18T03:43:28Z",
+  "endpoint": "http://127.0.0.1:8003/v1/completions",
+  "prompt_length": 8,
+  "max_tokens": 20,
+  "requests": 2,
+  "successes": 2,
+  "failures": 0,
+  "success_rate": 1.0,
+  "first_latency_ms": 842.7579810086172,
+  "total_latency_ms": 1689.837839017855,
+  "tokens_per_second": 23.670910353888313,
+  "gpu_memory_used_mib": 22738,
+  "gpu_memory_free_mib": 1250,
+  "gpu_memory_total_mib": 24467,
+  "params": {
+    "model": "qwen3.6-27b-nvfp4",
+    "prompt": "Explain what a CPU is in one sentence.",
+    "max_tokens": 20,
+    "temperature": 0.0
+  }
+}

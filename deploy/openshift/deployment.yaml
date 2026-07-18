@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: local-ai-stack-proof
+  labels:
+    app: local-ai-stack-proof
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: local-ai-stack-proof
+  template:
+    metadata:
+      labels:
+        app: local-ai-stack-proof
+    spec:
+      containers:
+        - name: local-ai-stack-proof
+          image: local-ai-stack-proof:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8060
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8060
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8060
+            initialDelaySeconds: 15
+            periodSeconds: 20

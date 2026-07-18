@@ -1,0 +1,159 @@
+==========================================
+SYSTEM INVENTORY
+Generated: 20260718T033758Z
+==========================================
+
+=== OS ===
+PRETTY_NAME="Ubuntu 26.04 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04 LTS (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo
+
+=== Kernel ===
+Linux payam-adloo-ai-workstation 7.0.0-27-generic #27-Ubuntu SMP PREEMPT_DYNAMIC Thu Jun 18 19:13:49 UTC 2026 x86_64 GNU/Linux
+
+=== GPU ===
+Fri Jul 17 20:37:58 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.71.05              Driver Version: 595.71.05      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX PRO 4000 Blac...    Off |   00000000:01:00.0 Off |                    0 |
+| 58%   76C    P1             68W /  145W |   22738MiB /  24467MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            6264      G   /usr/bin/gnome-shell                      3MiB |
+|    0   N/A  N/A           58483      C   VLLM::EngineCore                      22484MiB |
+|    0   N/A  N/A          105966      C   .../hermes-agent/venv/bin/python        226MiB |
++-----------------------------------------------------------------------------------------+
+
+=== GPU Details (CSV) ===
+NVIDIA RTX PRO 4000 Blackwell, 595.71.05, 22738 MiB, 24467 MiB, 76
+
+=== CUDA ===
+nvcc not in PATH
+
+=== Python ===
+Python 3.14.4
+/usr/bin/python3
+Package                   Version
+------------------------- -------------
+anyio                     4.14.2
+aptdaemon                 2.0.2
+argcomplete               3.6.3
+attrs                     25.4.0
+autocommand               2.2.2
+babel                     2.17.0
+bcc                       0.35.0
+bcrypt                    5.0.0
+blinker                   1.9.0
+Brlapi                    0.8.6
+certifi                   2026.1.4
+chardet                   5.2.0
+click                     8.1.8
+command-not-found         0.3
+configobj                 5.0.9
+cryptography              46.0.5
+cupshelpers               1.0
+dasbus                    1.7
+dbus-python               1.4.0
+defer                     1.0.6
+distro                    1.9.0
+distro-info               1.15
+ghp-import                2.1.0
+h11                       0.16.0
+httpcore                  1.0.9
+httplib2                  0.22.0
+httpx                     0.28.1
+idna                      3.11
+inflect                   7.5.0
+iniconfig                 2.1.0
+jaraco.context            6.0.1
+jaraco.functools          4.1.0
+jaraco.text               4.0.0
+Jinja2                    3.1.6
+joblib                    1.5.2
+jsonpatch                 1.32
+jsonpointer               2.4
+jsonschema                4.19.2
+pip not available
+
+=== Docker ===
+Docker version 29.6.1, build 8900f1d
+
+=== Git ===
+git version 2.53.0
+
+=== systemctl ===
+systemd 259 (259.5-0ubuntu3)
++PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE
+
+=== Service Status: local-ai ===
+inactive
+not found or inactive
+inactive
+not found or inactive
+
+=== VLLM Endpoint ===
+Status: 000000
+
+=== Governor Endpoint ===
+Status: 200
+
+=== Disk ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p2  1.8T  143G  1.6T   9% /
+
+=== Memory ===
+               total        used        free      shared  buff/cache   available
+Mem:            59Gi        18Gi       7.5Gi       1.5Gi        34Gi        40Gi
+Swap:          8.0Gi        48Ki       8.0Gi
+
+=== CPU ===
+16
+cores
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           48 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  16
+On-line CPU(s) list:                     0-15
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD Ryzen 7 9700X 8-Core Processor
+CPU family:                              26
+Model:                                   68
+Thread(s) per core:                      2
+Core(s) per socket:                      8
+
+=== Docker Running Containers ===
+CONTAINER ID   IMAGE                                              STATUS                  PORTS                      NAMES
+95a52bd5db3a   cislunar-ground-vendor-simulator                   Up 9 hours (healthy)    127.0.0.1:8081->8081/tcp   cislunar-ground-vendor-simulator-1
+86ffee9969c4   cislunar-ground-payload-worker                     Up 9 hours (healthy)                               cislunar-ground-payload-worker-1
+9c0c82aa7924   cislunar-ground-ground-api                         Up 9 hours (healthy)    127.0.0.1:8080->8080/tcp   cislunar-ground-ground-api-1
+63cf82b77019   postgres:17-alpine                                 Up 11 hours (healthy)   5432/tcp                   cislunar-ground-postgres-1
+b0e474d6f362   redis:7.4-alpine                                   Up 11 hours (healthy)   6379/tcp                   cislunar-ground-redis-1
+6df6d3da8005   vllm/vllm-openai:v0.25.1-x86_64-cu129-ubuntu2404   Up 2 days (healthy)     127.0.0.1:8000->8000/tcp   qwen36-vllm
+
+=== Directory Size ===
+4.0K	/home/payam-adloo/Work/local-ai-inference-proof
+3.0M	/home/payam-adloo/Work/local-ai-inference-proof/
+
+== END INVENTORY ==

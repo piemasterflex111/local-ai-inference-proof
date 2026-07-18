@@ -1,0 +1,86 @@
+timestamp,event,category,result,source_file
+2026-06-12 19:01:23,Startup: qwen36_canonical_2026-06-12_19-01-23.log,startup,START,evidence/startup_logs/qwen36_canonical_2026-06-12_19-01-23.log
+2026-06-12 20:52:44,Startup: qwen36_canonical_2026-06-12_20-52-44.log,startup,VERIFIED_BASELINE,evidence/startup_logs/qwen36_canonical_2026-06-12_20-52-44.log
+2026-06-12 20:53:47,Startup: qwen36_canonical_2026-06-12_20-53-47.log,startup,START,evidence/startup_logs/qwen36_canonical_2026-06-12_20-53-47.log
+2026-06-13 15:00:28,Config backup: qwen36_text_config_20260613_150028.txt,config,START,evidence/config_backups/qwen36_text_config_20260613_150028.txt
+2026-06-13 15:27:57,Config backup: config.yaml.before_enterprise_router_20260613_152757,config,RECORDED,evidence/config_backups/config.yaml.before_enterprise_router_20260613_152757
+2026-06-13 15:27:57,Config backup: hauto.bak.20260613_152757,config,VERIFIED_BASELINE,evidence/config_backups/hauto.bak.20260613_152757
+2026-06-13 15:27:57,Config backup: hermes-mode.bak.20260613_152757,config,VERIFIED_BASELINE,evidence/config_backups/hermes-mode.bak.20260613_152757
+2026-06-13 15:27:57,Config backup: qwen-health.bak.20260613_152757,config,VERIFIED_BASELINE,evidence/config_backups/qwen-health.bak.20260613_152757
+2026-06-13 15:27:57,Config backup: qwen-vl-health.bak.20260613_152757,config,VERIFIED_BASELINE,evidence/config_backups/qwen-vl-health.bak.20260613_152757
+2026-06-13 15:27:57,Config backup: start-qwen-vl.bak.20260613_152757,config,VERIFIED_BASELINE,evidence/config_backups/start-qwen-vl.bak.20260613_152757
+2026-06-13 15:27:57,Config backup: start-qwen.bak.20260613_152757,config,VERIFIED_BASELINE,evidence/config_backups/start-qwen.bak.20260613_152757
+2026-06-13 15:27:57,Config backup: stop-qwen-vl.bak.20260613_152757,config,VERIFIED_BASELINE,evidence/config_backups/stop-qwen-vl.bak.20260613_152757
+2026-06-13 15:27:57,Config backup: stop-qwen.bak.20260613_152757,config,VERIFIED_BASELINE,evidence/config_backups/stop-qwen.bak.20260613_152757
+2026-06-13 15:28:14,Startup: text_container_id_20260613_152814.log,startup,RECORDED,evidence/startup_logs/text_container_id_20260613_152814.log
+2026-06-13 15:29:55,Config backup: config.yaml.before_text_switch_20260613_152955,config,RECORDED,evidence/config_backups/config.yaml.before_text_switch_20260613_152955
+2026-06-13 15:30:12,Startup: vision_container_id_20260613_153012.log,startup,RECORDED,evidence/startup_logs/vision_container_id_20260613_153012.log
+2026-06-13 15:39:00,Startup: text_container_id_20260613_153900.log,startup,RECORDED,evidence/startup_logs/text_container_id_20260613_153900.log
+2026-06-13 15:40:40,Config backup: config.yaml.before_text_switch_20260613_154040,config,RECORDED,evidence/config_backups/config.yaml.before_text_switch_20260613_154040
+2026-06-13 15:44:46,Config backup: config.yaml.before_text_switch_20260613_154446,config,RECORDED,evidence/config_backups/config.yaml.before_text_switch_20260613_154446
+2026-06-13 16:26:13,Startup: vision_container_id_20260613_162613.log,startup,RECORDED,evidence/startup_logs/vision_container_id_20260613_162613.log
+2026-06-13 16:31:00,Startup: text_container_id_20260613_163100.log,startup,RECORDED,evidence/startup_logs/text_container_id_20260613_163100.log
+2026-06-13 16:33:49,Startup: text_container_id_20260613_163349.log,startup,RECORDED,evidence/startup_logs/text_container_id_20260613_163349.log
+2026-06-13 16:33:59,Startup: text_container_id_20260613_163359.log,startup,RECORDED,evidence/startup_logs/text_container_id_20260613_163359.log
+2026-06-13 16:35:38,Startup: text_container_id_20260613_163538.log,startup,RECORDED,evidence/startup_logs/text_container_id_20260613_163538.log
+2026-06-13 16:35:38,Startup: vision_container_id_20260613_163538.log,startup,RECORDED,evidence/startup_logs/vision_container_id_20260613_163538.log
+2026-06-13 16:35:50,Startup: vision_container_id_20260613_163550.log,startup,RECORDED,evidence/startup_logs/vision_container_id_20260613_163550.log
+2026-06-13 16:46:14,Startup: text_container_id_20260613_164614.log,startup,RECORDED,evidence/startup_logs/text_container_id_20260613_164614.log
+2026-06-13 16:48:00,Config backup: config.yaml.before_text_switch_20260613_164800,config,RECORDED,evidence/config_backups/config.yaml.before_text_switch_20260613_164800
+2026-06-13 17:04:38,Startup: start_qwen_20260613_170438.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_170438.log
+2026-06-13 17:07:02,Config backup: config.yaml.before_text_switch_20260613_170702,config,RECORDED,evidence/config_backups/config.yaml.before_text_switch_20260613_170702
+2026-06-13 17:12:58,Startup: start_qwen_20260613_171258.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_171258.log
+2026-06-13 17:15:18,Startup: vision_container_id_20260613_171518.log,startup,RECORDED,evidence/startup_logs/vision_container_id_20260613_171518.log
+2026-06-13 17:19:28,Startup: start_qwen_20260613_171928.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_171928.log
+2026-06-13 17:27:06,Config backup: hvision-ac.bak.20260613_172706,config,VERIFIED_BASELINE,evidence/config_backups/hvision-ac.bak.20260613_172706
+2026-06-13 17:27:06,Config backup: qwen-vl-health.bak.20260613_172706,config,RECORDED,evidence/config_backups/qwen-vl-health.bak.20260613_172706
+2026-06-13 17:27:06,Config backup: start-qwen-vl.bak.20260613_172706,config,RECORDED,evidence/config_backups/start-qwen-vl.bak.20260613_172706
+2026-06-13 17:27:06,Config backup: stop-qwen-vl.bak.20260613_172706,config,RECORDED,evidence/config_backups/stop-qwen-vl.bak.20260613_172706
+2026-06-13 17:27:06,Config backup: vision-review-maintenance.bak.20260613_172706,config,MISSING_FILE,evidence/config_backups/vision-review-maintenance.bak.20260613_172706
+2026-06-13 17:33:26,Startup: start_qwen_20260613_173326.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_173326.log
+2026-06-13 17:51:30,Startup: start_qwen_20260613_175130.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_175130.log
+2026-06-13 17:51:57,Startup: text_container_id_20260613_175157.log,startup,RECORDED,evidence/startup_logs/text_container_id_20260613_175157.log
+2026-06-13 17:56:53,Startup: start_qwen_20260613_175653.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_175653.log
+2026-06-13 17:57:05,Startup: text_container_id_20260613_175705.log,startup,RECORDED,evidence/startup_logs/text_container_id_20260613_175705.log
+2026-06-13 17:58:45,Config backup: config.yaml.before_text_switch_20260613_175845,config,RECORDED,evidence/config_backups/config.yaml.before_text_switch_20260613_175845
+2026-06-13 18:05:00,Config backup: config.yaml.before_text_switch_20260613_180500,config,RECORDED,evidence/config_backups/config.yaml.before_text_switch_20260613_180500
+2026-06-13 18:06:49,Startup: start_qwen_20260613_180649.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_180649.log
+2026-06-13 18:10:56,Config backup: config.yaml.before_text_switch_20260613_181056,config,RECORDED,evidence/config_backups/config.yaml.before_text_switch_20260613_181056
+2026-06-13 18:25:34,Startup: start_qwen_20260613_182534.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_182534.log
+2026-06-13 18:27:24,Config backup: config.yaml.before_text_switch_20260613_182724,config,RECORDED,evidence/config_backups/config.yaml.before_text_switch_20260613_182724
+2026-06-13 18:33:38,Config backup: config.yaml.before_text_switch_20260613_183338,config,RECORDED,evidence/config_backups/config.yaml.before_text_switch_20260613_183338
+2026-06-13 18:36:50,Startup: start_qwen_20260613_183650.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_183650.log
+2026-06-13 18:40:16,Startup: start_qwen_20260613_184016.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_184016.log
+2026-06-13 18:47:00,Startup: start_qwen_20260613_184700.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_184700.log
+2026-06-13 18:53:23,Startup: start_qwen_20260613_185323.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_185323.log
+2026-06-13 19:02:36,Startup: start_qwen_20260613_190236.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_190236.log
+2026-06-13 19:07:15,Startup: start_qwen_20260613_190715.log,startup,RECORDED,evidence/startup_logs/start_qwen_20260613_190715.log
+2026-06-14 09:37:51,Config backup: qwen36-current-cmd-20260614_093751.json,config,START,evidence/config_backups/qwen36-current-cmd-20260614_093751.json
+2026-06-14 09:37:51,Config backup: qwen36-current-full-inspect-20260614_093751.json,config,VERIFIED_BASELINE,evidence/config_backups/qwen36-current-full-inspect-20260614_093751.json
+2026-06-14 09:40:07,Startup: start_qwen_65k_mtp1_20260614_094007.log,startup,RECORDED,evidence/startup_logs/start_qwen_65k_mtp1_20260614_094007.log
+2026-06-14 09:43:09,Startup: start_qwen_65k_mtp1_squeeze_20260614_094309.log,startup,RECORDED,evidence/startup_logs/start_qwen_65k_mtp1_squeeze_20260614_094309.log
+2026-06-14 09:45:25,Startup: start_qwen_65k_mtp1_ultra_20260614_094525.log,startup,RECORDED,evidence/startup_logs/start_qwen_65k_mtp1_ultra_20260614_094525.log
+2026-06-14 09:48:16,Startup: start_qwen_hermes_65k_stable_20260614_094816.log,startup,RECORDED,evidence/startup_logs/start_qwen_hermes_65k_stable_20260614_094816.log
+2026-06-14 09:52:52,Startup: start_qwen_hermes_65k_stable_20260614_095252.log,startup,RECORDED,evidence/startup_logs/start_qwen_hermes_65k_stable_20260614_095252.log
+2026-06-14 09:54:44,Startup: start_qwen_hermes_65k_stable_20260614_095444.log,startup,RECORDED,evidence/startup_logs/start_qwen_hermes_65k_stable_20260614_095444.log
+2026-06-14 09:57:47,Startup: start_qwen_hermes_65k_stable_20260614_095747.log,startup,RECORDED,evidence/startup_logs/start_qwen_hermes_65k_stable_20260614_095747.log
+2026-06-14 10:02:00,Startup: start_qwen_65k_mtp1_cpuoffload8_20260614_100200.log,startup,RECORDED,evidence/startup_logs/start_qwen_65k_mtp1_cpuoffload8_20260614_100200.log
+2026-06-14 10:07:13,Startup: start_qwen_65k_mtp1_cpuoffload10_stable_20260614_100713.log,startup,RECORDED,evidence/startup_logs/start_qwen_65k_mtp1_cpuoffload10_stable_20260614_100713.log
+2026-06-14 10:15:38,Startup: start_qwen_65k_mtp1_cpuoffload8_fast_20260614_101538.log,startup,RECORDED,evidence/startup_logs/start_qwen_65k_mtp1_cpuoffload8_fast_20260614_101538.log
+2026-06-14 11:53:36,Startup: start_qwen_hermes_65k_stable_20260614_115336.log,startup,RECORDED,evidence/startup_logs/start_qwen_hermes_65k_stable_20260614_115336.log
+2026-06-14 12:04:19,Startup: start_qwen_daily_65k_gpu_fast_20260614_120419.log,startup,RECORDED,evidence/startup_logs/start_qwen_daily_65k_gpu_fast_20260614_120419.log
+2026-06-14 12:18:08,Startup: start_qwen_daily_65k_gpu_fast_20260614_121808.log,startup,RECORDED,evidence/startup_logs/start_qwen_daily_65k_gpu_fast_20260614_121808.log
+2026-06-14 12:20:15,Startup: start_qwen_daily_65k_gpu_fast_20260614_122015.log,startup,RECORDED,evidence/startup_logs/start_qwen_daily_65k_gpu_fast_20260614_122015.log
+2026-06-14 12:28:26,Startup: start_qwen_daily_65k_gpu_fast_20260614_122826.log,startup,RECORDED,evidence/startup_logs/start_qwen_daily_65k_gpu_fast_20260614_122826.log
+2026-06-14 13:01:34,Startup: start_qwen_65k_mtp1_cpuoffload8_fast_20260614_130134.log,startup,RECORDED,evidence/startup_logs/start_qwen_65k_mtp1_cpuoffload8_fast_20260614_130134.log
+2026-06-17 01:42:16,Benchmark: rtx_daily_bench_20260617_014216.csv,benchmark,RECORDED,evidence/benchmarks/rtx_daily_bench_20260617_014216.csv
+2026-06-17 01:42:16,Benchmark: rtx_daily_bench_20260617_014216.md,benchmark,VERIFIED_BASELINE,evidence/benchmarks/rtx_daily_bench_20260617_014216.md
+2026-06-17 01:43:09,Benchmark: rtx_daily_bench_20260617_014309.csv,benchmark,RECORDED,evidence/benchmarks/rtx_daily_bench_20260617_014309.csv
+2026-06-17 01:43:09,Benchmark: rtx_daily_bench_20260617_014309.md,benchmark,RECORDED,evidence/benchmarks/rtx_daily_bench_20260617_014309.md
+2026-06-17 01:50:41,Benchmark: rtx_daily_bench_20260617_015041.csv,benchmark,RECORDED,evidence/benchmarks/rtx_daily_bench_20260617_015041.csv
+2026-06-17 01:50:41,Benchmark: rtx_daily_bench_20260617_015041.md,benchmark,RECORDED,evidence/benchmarks/rtx_daily_bench_20260617_015041.md
+2026-06-17 01:56:14,Benchmark: rtx_daily_bench_20260617_015614.csv,benchmark,RECORDED,evidence/benchmarks/rtx_daily_bench_20260617_015614.csv
+2026-06-17 01:56:14,Benchmark: rtx_daily_bench_20260617_015614.md,benchmark,RECORDED,evidence/benchmarks/rtx_daily_bench_20260617_015614.md
+2026-06-19 00:20:03,Governor backup: governor.py.bak.20260619_002003,governor,RECORDED,evidence/home_root/governor/governor.py.bak.20260619_002003
+2026-06-19 00:26:12,Governor backup: governor.py.bak.forward_patch.20260619_002612,governor,RECORDED,evidence/home_root/governor/governor.py.bak.forward_patch.20260619_002612
+2026-06-19 20:35:05,PASS baseline: qwen_request_governor_PASS_20260619_203505.jsonl,pass_baseline,RECORDED,evidence/home_root/agent55_baselines/qwen_request_governor_PASS_20260619_203505.jsonl

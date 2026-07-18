@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-07-18T03:45:59Z",
+  "level1_process": "PASS: Docker container running",
+  "level2_api": "PASS: API 200, models=['qwen3.6-27b-nvfp4']",
+  "level3_inference": "PASS: Generated 0 tokens",
+  "api_latency_ms": 23.190528998384252,
+  "inference_latency_ms": 444.1771929850802,
+  "tokens_per_second": 0.0,
+  "gpu_memory_mi_b": 22738,
+  "cpu_percent": null,
+  "overall": "HEALTHY"
+}
