@@ -1,6 +1,6 @@
 # Local AI Inference Platform
 
-Portfolio project demonstrating Linux systems engineering, systemd service management, automated health monitoring, performance benchmarking, and software packaging for the NVIDIA Linux Installation & Packaging Engineer role.
+A local AI inference stack for Linux workstations. Demonstrates systemd service management, automated health monitoring, performance benchmarking, and Debian packaging.
 
 ## Architecture
 
@@ -37,7 +37,7 @@ local-ai-inference-proof/
 │   ├── test_platform.py    # Unit tests (module imports, serialization, scripts)
 │   └── test_api.py        # Integration tests (marked skip without service)
 ├── evidence/               # Automated evidence output (inventory, benchmarks)
-├── docs/                   # Documentation and resume artifacts
+├── docs/                   # Additional documentation
 └── requirements.txt        # Python dependencies
 ```
 
@@ -82,23 +82,12 @@ python3 -m pytest tests/ -v
 bash packaging/debian/build_deb.sh
 ```
 
-## Resume Bullets (NVIDIA Application)
-
-**Use these bullets for your resume or application:**
-
-1. *Deployed local AI inference platform on Linux (Ubuntu 24.04) using vLLM with systemd service management, automated health checks, and Debian software packaging for production deployment.*
-2. *Implemented 3-level health monitoring (process, API, inference) with JSON evidence collection and bash automation for continuous system validation.*
-3. *Built automated installation pipeline with pre-flight checks, dependency verification, and post-install service activation using Python and bash scripts.*
-4. *Developed performance benchmarking system measuring first-token latency, throughput, and GPU memory utilization across multiple inference endpoints.*
-5. *Architected local inference stack on NVIDIA RTX PRO 4000 Blackwell GPU with 24 GB VRAM, implementing vLLM with Docker containerization and rate-limited proxy.*
-
 ## Technologies
 
 - **OS:** Ubuntu Linux 24.04
-- **GPU:** NVIDIA RTX PRO 4000 Blackwell (24 GB)
-- **Inference:** vLLM
+- **Inference:** vLLM (Qwen 3.6 65B)
 - **Orchestration:** Docker Compose
-- **Service Management:** systemD
+- **Service Management:** systemd
 - **Language:** Python, Bash
 - **Testing:** pytest
 - **Packaging:** Debian (.deb)
