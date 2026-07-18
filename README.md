@@ -85,7 +85,7 @@ bash packaging/debian/build_deb.sh
 ## Technologies
 
 - **OS:** Ubuntu Linux 24.04
-- **Inference:** vLLM (Qwen 3.6 65B)
+- **Inference:** vLLM (Qwen 3.6 27B)
 - **Orchestration:** Docker Compose
 - **Service Management:** systemd
 - **Language:** Python, Bash
